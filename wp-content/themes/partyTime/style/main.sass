@@ -2531,6 +2531,22 @@ ul.text_content
 			background-color: #231b35
 			&:after
 				border-left: 13px solid #372d4f
+		.step2_active
+			background-color: #4c3e77
+			&:after
+				border-left: 13px solid #5d4d8d
+		.step3_active
+			background-color: #6f479b
+			&:after
+				border-left: 13px solid #8257b2
+		.step4_active
+			background-color: #3e87cb
+			&:after
+				border-left: 13px solid #539bde
+		.step5_active
+			background-color: #c544a7
+			&:after
+				border-left: 13px solid #db59bd
 
 		.step_item
 			background-color: #ddd
@@ -2541,8 +2557,18 @@ ul.text_content
 			font-size: 2em
 			line-height: 1.7
 			font-weight: bold
+			img
+				margin-bottom: 3px
 		.step_number_1
 			background-color: #372d4f
+		.step_number_2
+			background-color: #5d4d8d
+		.step_number_3
+			background-color: #8257b2
+		.step_number_4
+			background-color: #539bde
+		.step_number_5
+			background-color: #db59bd
 
 
 .step_tab_p
@@ -2550,15 +2576,15 @@ ul.text_content
 	padding-left: 20px
 
 .form_wrapper
-	border: 1px solid #231b35
 	padding: 0 2em 2em 2em
+	overflow: hidden
 	.bold_caption
 		font-weight: bold
 	.grey_caption
 		color: #c6c6c6
 	.caption
 		display: block
-		margin: 2em 0
+		margin: 2em 0 1em 0
 	sup
 		color: red
 	.form_item
@@ -2567,10 +2593,20 @@ ul.text_content
 		font-size: 12px
 		label
 			font-weight: bold
+			line-height: 2.2
 		select, input
 			padding: 0.5em
 			width: 280px
 			border: 1px solid #c6c6c6
+			height: 30px
+			option
+				font-size: 12px
+				line-height: 1.2em
+			// &checked
+			// 	background-color: red
+		textarea
+			width: 380px
+			padding: 1em
 	.checkbox
 		width: 155px
 		display: inline-block
@@ -2580,14 +2616,90 @@ ul.text_content
 	.payment
 		input
 			width: 15px
+			height: 15px
+		.wpcf7-list-item
+			display: inline-block
+	.budget
+		display: block
+		float: left
+		margin-right: 1em
+		input
+			width: 190px
+	.currency
+		display: block
+		select
+			position: absolute
+			top: -17px
+			width: 80px
+	.four_step_item
+		display: block
 .catering
 	display: block
 .wpcf7-list-item
 	display: block
 	margin: 0.3em 0 0
 
+textarea[placeholder]
+	// padding-left: 1em
+	// padding-top: -1em
+
+.active_wrap1
+	border: 1px solid #231b35
+	input[type="submit"]
+		background-color: #372d4f
+		border: 2px solid #372d4f
+		&:hover, :focus
+			border: 2px solid #372d4f
+			color: #372d4f
+.active_wrap2
+	border: 1px solid #5d4d8d
+	input[type="submit"]
+		background-color: #5d4d8d
+		border: 2px solid #5d4d8d
+		&:hover, :focus
+			border: 2px solid #5d4d8d
+			color: #5d4d8d
+.active_wrap3
+	border: 1px solid #8257b2
+	input[type="submit"]
+		background-color: #8257b2
+		border: 2px solid #8257b2
+		&:hover, :focus
+			border: 2px solid #8257b2
+			color: #8257b2
+.active_wrap4
+	border: 1px solid #539bde
+	input[type="submit"]
+		background-color: #539bde
+		border: 2px solid #539bde
+		&:hover, :focus
+			border: 2px solid #539bde
+			color: #539bde
+.active_wrap5
+	border: 1px solid #db59bd
+	input[type="submit"]
+		background-color: #db59bd
+		border: 2px solid #db59bd
+		&:hover, :focus
+			border: 2px solid #db59bd
+			color: #db59bd
+
 .step_button
 	overflow: auto
+	width: 100%
+	.ajax-loader
+		display: block
+		float: right
+		padding: 1em 1em 0 0
+
+// input[type="radio"]
+// 	display: none
+// label
+// 	input[type="radio"]
+// 		display: inline-block
+// 		background: url(http://nosensus.com/wp-content/uploads/2013/04/checkbox-radiobutton.jpg) no-repeat 0 0
+
+
 input[type="button"]
 	text-decoration: underline
 	border: 0
@@ -2598,26 +2710,39 @@ input[type="button"]
 	padding-top: 20px
 input[type="submit"]
 	color: #fff
-	background-color: #372d4f
 	font-size: 1em
 	padding: 0.7em 2em
 	float: right
 	font-weight: bold
 	cursor: pointer
-	border: 2px solid #372d4f
 	&:hover, :focus
-		border: 2px solid #372d4f
-		color: #372d4f
 		background-color: #fff
 		outline: none
 
 
+.result_items_block
+	display: block
+	float: left
+	min-width: 245px
+	max-width: 33%
+	font-size: 12px
+	padding-bottom: 2em
+	label
+		font-weight: bold
+		//line-height: 2.2
+		margin-bottom: 10px
+
+	.item_caption
+		color: #7b7b7b
+		margin-top: 1em
 
 
 
 
 
 
+.workWith
+	margin-bottom: 6em
 
 
 

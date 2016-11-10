@@ -91,7 +91,7 @@
 
   <section class="workWith">
     <div class="container">
-      <p class="section-header__p"></p>
+      <p class="section-header__p">С нами работали (Наши клиенты)</p>
       <div class="workWith__container">
         <div id="owl3" class="owl-carousel">
           <?php

@@ -101,7 +101,7 @@ function register_meta_boxes( $meta_boxes ) {
                 'name'             => 'Images',
                 'id'               => 'imgadv3',
                 'type'             => 'image_advanced',
-                'max_file_uploads' => 20,
+                'max_file_uploads' => 50,
             ),
 
             array(
