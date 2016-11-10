@@ -684,6 +684,7 @@ section, footer
 		height: 100%
 		width: 100%
 		position: relative
+		overflow: hidden
 #owl1
 	p
 		position: absolute
@@ -2420,6 +2421,8 @@ ul.text_content
 	display: block
 	margin: 20px auto 0
 	width: 180px
+.open_modal
+	text-decoration: none
 
 .modal_order
 	width: 800px
@@ -2499,18 +2502,12 @@ ul.text_content
 
 // form order
 .tab_form
+	margin: 2em auto
+	max-width: 800px
 	.step_container
 		display: flex
 		justify-content: flex-start
 		flex-flow: row nowrap
-
-		.step_number_1
-
-		.step_number_2
-			// &:before
-			// 	content: "2"
-
-
 
 		.step
 			width: 105px
@@ -2530,22 +2527,101 @@ ul.text_content
 				border-top: 25px solid transparent
 				border-left: 13px solid #ddd
 				border-bottom: 25px solid transparent
-.step_item
-	background-color: #ddd
-	width: 30px
-	height: 50px
-	padding-left: 10px
-	display: block
-	font-size: 2em
-	line-height: 1.7
-	font-weight: bold
+		.step1_active
+			background-color: #231b35
+			&:after
+				border-left: 13px solid #372d4f
+
+		.step_item
+			background-color: #ddd
+			width: 30px
+			height: 50px
+			padding-left: 10px
+			display: block
+			font-size: 2em
+			line-height: 1.7
+			font-weight: bold
+		.step_number_1
+			background-color: #372d4f
+
+
 .step_tab_p
 	line-height: 3.2
 	padding-left: 20px
 
+.form_wrapper
+	border: 1px solid #231b35
+	padding: 0 2em 2em 2em
+	.bold_caption
+		font-weight: bold
+	.grey_caption
+		color: #c6c6c6
+	.caption
+		display: block
+		margin: 2em 0
+	sup
+		color: red
+	.form_item
+		display: inline-block
+		margin: 0 2em 2em 0
+		font-size: 12px
+		label
+			font-weight: bold
+		select, input
+			padding: 0.5em
+			width: 280px
+			border: 1px solid #c6c6c6
+	.checkbox
+		width: 155px
+		display: inline-block
+		input
+			width: 15px
+			height: 15px
+	.payment
+		input
+			width: 15px
+.catering
+	display: block
+.wpcf7-list-item
+	display: block
+	margin: 0.3em 0 0
 
-	.form_wrapper
-		border: 1px solid #231b35
+.step_button
+	overflow: auto
+input[type="button"]
+	text-decoration: underline
+	border: 0
+	background: 0
+	color: #7b7b7b
+	font-size: 1em
+	cursor: pointer
+	padding-top: 20px
+input[type="submit"]
+	color: #fff
+	background-color: #372d4f
+	font-size: 1em
+	padding: 0.7em 2em
+	float: right
+	font-weight: bold
+	cursor: pointer
+	border: 2px solid #372d4f
+	&:hover, :focus
+		border: 2px solid #372d4f
+		color: #372d4f
+		background-color: #fff
+		outline: none
+
+
+
+
+
+
+
+
+
+
+
+
 
 .wrap div.container
 	display: none

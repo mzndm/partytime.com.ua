@@ -234,6 +234,10 @@ for (var x = 0; x < urls.length; x++) {
 		if (window.location.href.indexOf(urls[x][y]) > -1) {
 			$(".menu__item--current").removeClass("menu__item--current");
  			$(".menu__item").eq(x).addClass("menu__item--current");
+
+			var imageWidth = parseInt($(".gallery .owl-item").css("width"),10);
+			var translate3d = "translate3d(-" + imageWidth * x + "px, 0px, 0px)";
+			$(".gallery .owl-wrapper").css("transform", translate3d);
 		}
 	}
 }

@@ -53,27 +53,8 @@
 		<p>Данный раздел находится в разработке.</p>
 		<p>Воспользуйтесь онлайн-заказом. </p>
 
-		<a href="#order" class="open_modal button__modal button_zakaz">Онлайн - заказ</a>
+		<a href="/zakaz-prazdnika.html" class="button__modal button_zakaz">Онлайн - заказ</a>
 </div>
-
-<!--
-
-<div id="order" class="modal_div modal_order">
-		<form action="" method="post">
-			<h3>Простое модальное окно 2</h3>
-			<p>Тут может быть рандомная обычная форма например.</p>
-			<p>Ваше имя<br>
-				<input type="text" name="your-name" value="" size="40">
-			</p>
-			<p>Ваш телефон<br>
-				<input type="text" name="your-name" value="" size="40">
-			</p>
-			<p style="text-align: center; padding-bottom: 10px;">
-				<input type="submit" value="Отправить">
-			</p>
-		</form>
-</div> -->
-
 
 <div id="overlay"></div>
 
