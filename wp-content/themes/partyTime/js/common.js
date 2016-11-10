@@ -186,11 +186,17 @@ $(document).ready(function() {
 	});
 //finish
 
- $("#owl2").data('owlCarousel').reinit({
+$("#owl2").data('owlCarousel').reinit({
  	singleItem: false,
-    items : 4,
+    items: 4,
     autoPlay: 2000
-  });
+});
+
+$("#owl3").data('owlCarousel').reinit({
+ 	singleItem: false,
+    items: 6,
+    autoPlay: 2000
+});
 
 // modal vindows - start
     /* зaсунем срaзу все элементы в переменные, чтoбы скрипту не прихoдилoсь их кaждый рaз искaть при кликaх */

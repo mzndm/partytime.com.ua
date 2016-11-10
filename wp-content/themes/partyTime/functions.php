@@ -87,6 +87,33 @@ function register_meta_boxes( $meta_boxes ) {
         )
     );
 
+    $meta_boxes[] = array(
+
+        'id'         => 'standard3',
+        'title'      => 'Gallery Tertiary',
+        'post_types' => 'page',
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'autosave'   => true,
+        'fields' => array(
+
+            array(
+                'name'             => 'Images',
+                'id'               => 'imgadv3',
+                'type'             => 'image_advanced',
+                'max_file_uploads' => 20,
+            ),
+
+            array(
+            	'name' => 'Text Fields',
+                'id'   => 'imgcap3',
+                'type' => 'text',
+                'clone' => true,
+                'max_clone' => 20,
+            )
+        )
+    );
+
     return $meta_boxes;
 }
 
