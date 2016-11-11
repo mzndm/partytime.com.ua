@@ -84,17 +84,17 @@ section, footer
 	color: #898989
 	font: 600 0.8rem/3.8em "Open Sans"
 
-::-moz-placeholder
-	color: #898989
-	font: 600 0.8rem/3.8em "Open Sans"
+// ::-moz-placeholder
+// 	color: #898989
+// 	font: 600 0.8rem/3.8em "Open Sans"
 
 :-ms-input-placeholder
 	color: #898989
 	font: 600 0.8rem/3.8em "Open Sans"
-
-:-moz-placeholder
-	color: #898989
-	font: 600 0.8rem/3.8em "Open Sans"
+//
+// :-moz-placeholder
+// 	color: #898989
+// 	font: 600 0.8rem/3.8em "Open Sans"
 
 /* ============================================== Start header ======================================*/
 
@@ -2570,6 +2570,29 @@ ul.text_content
 		.step_number_5
 			background-color: #db59bd
 
+	input[type="button"]
+		text-decoration: underline
+		border: 0
+		background: 0
+		color: #7b7b7b
+		font-size: 1em
+		cursor: pointer
+		padding-top: 20px
+	input[type="submit"]
+		color: #fff
+		font-size: 1em
+		padding: 0.7em 2em
+		float: right
+		font-weight: bold
+		cursor: pointer
+		&:hover, :focus
+			background-color: #fff
+			outline: none
+
+	.wpcf7-mail-sent-ok
+		border: none
+
+
 
 .step_tab_p
 	line-height: 3.2
@@ -2578,6 +2601,7 @@ ul.text_content
 .form_wrapper
 	padding: 0 2em 2em 2em
 	overflow: hidden
+	position: relative
 	.bold_caption
 		font-weight: bold
 	.grey_caption
@@ -2588,14 +2612,16 @@ ul.text_content
 	sup
 		color: red
 	.form_item
-		display: inline-block
+		// display: inline-block
 		margin: 0 2em 2em 0
+		display: block
+		float: left
 		font-size: 12px
 		label
 			font-weight: bold
 			line-height: 2.2
 		select, input
-			padding: 0.5em
+			padding-left: 0.5em
 			width: 280px
 			border: 1px solid #c6c6c6
 			height: 30px
@@ -2604,19 +2630,36 @@ ul.text_content
 				line-height: 1.2em
 			// &checked
 			// 	background-color: red
+		.time
+			width: 280px
+			label
+				display: block
+				float: left
+				width: 70px
+				padding-top: 14px
+			select
+				width: 80px
 		textarea
 			width: 380px
 			padding: 1em
+	// .place_wrap
+	// 	position: absolute
 	.checkbox
 		width: 155px
+		min-height: 180px
 		display: inline-block
 		input
 			width: 15px
 			height: 15px
+		.wpcf7-list-item
+			label
+				font-weight: normal
 	.payment
 		input
 			width: 15px
 			height: 15px
+		label
+			font-weight: normal
 		.wpcf7-list-item
 			display: inline-block
 	.budget
@@ -2633,6 +2676,7 @@ ul.text_content
 			width: 80px
 	.four_step_item
 		display: block
+		width: 100%
 .catering
 	display: block
 .wpcf7-list-item
@@ -2691,34 +2735,11 @@ textarea[placeholder]
 		display: block
 		float: right
 		padding: 1em 1em 0 0
-
-// input[type="radio"]
-// 	display: none
-// label
-// 	input[type="radio"]
-// 		display: inline-block
-// 		background: url(http://nosensus.com/wp-content/uploads/2013/04/checkbox-radiobutton.jpg) no-repeat 0 0
-
-
-input[type="button"]
-	text-decoration: underline
-	border: 0
-	background: 0
-	color: #7b7b7b
-	font-size: 1em
-	cursor: pointer
-	padding-top: 20px
-input[type="submit"]
-	color: #fff
-	font-size: 1em
-	padding: 0.7em 2em
-	float: right
-	font-weight: bold
-	cursor: pointer
-	&:hover, :focus
-		background-color: #fff
-		outline: none
-
+.submited
+	text-align: center
+	padding: 9em 0
+	line-height: 2
+	font-size: 16px
 
 .result_items_block
 	display: block
@@ -2735,6 +2756,14 @@ input[type="submit"]
 	.item_caption
 		color: #7b7b7b
 		margin-top: 1em
+
+
+.wpcf7 form	div.visible-only-if-sent
+    display: none
+
+.wpcf7 form.sent div.visible-only-if-sent
+    display: block
+
 
 
 
