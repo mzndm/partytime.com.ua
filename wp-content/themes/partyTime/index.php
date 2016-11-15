@@ -174,5 +174,5 @@
 <!-- start Wrapper  -->
 
         <?php get_footer();?>
-</body>
-</html>
+<!-- </body>
+</html> -->

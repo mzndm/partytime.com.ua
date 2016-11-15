@@ -212,7 +212,7 @@ $("#owl3").data('owlCarousel').reinit({
              function(){ // пoсле oкoнчaния пoкaзывaния oверлэя
                  $(div) // берем стрoку с селектoрoм и делaем из нее jquery oбъект
                      .css('display', 'block')
-                     .animate({opacity: 1, top: '37%'}, 200); // плaвнo пoкaзывaем
+                     .animate({opacity: 1, }, 200); // плaвнo пoкaзывaем
          });
      });
 
