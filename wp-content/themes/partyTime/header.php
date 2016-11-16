@@ -4,6 +4,7 @@
 <head>
   <!-- <base href="h ttp://dev.partytime/" target="_blank"> -->
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1300, initial-scale=1">
 	<title>PartyTime</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/component.css" />
@@ -151,7 +152,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 						</a>
 					</li>
-          <li class="menu-social__icon">
+        </ul>
+				<ul class="menu_phone">
+					<li class="menu-social__icon">
             <a href="tel:+З8О44З5З172О">
 							<svg width="20px" height="20px" fill="#776e88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 578.106 578.106" style="enable-background:new 0 0 578.106 578.106;" xml:space="preserve" >
 							<g>

@@ -129,7 +129,8 @@ section, footer
 
 .header__menu-top ul:nth-child(1)
 	margin-right: auto
-	max-width: 342px
+	//max-width: 342px
+	max-width: 170px
 	width: 100%
 
 .menu-social__icon
@@ -148,7 +149,7 @@ section, footer
 .menu-social__icon:hover svg #phone
 	fill: #fff
 
-.header__menu-top ul:nth-child(2)
+.header__menu-top ul:nth-child(3)
 	margin-left: auto
 	max-width: 518px
 	width: 100%
@@ -686,6 +687,7 @@ section, footer
 		position: relative
 		overflow: hidden
 #owl1
+	position: relative
 	p
 		position: absolute
 		right: 8em
@@ -695,6 +697,31 @@ section, footer
 		font-weight: bold
 		text-transform: uppercase
 		text-shadow: 1px 2px 3px #999
+
+	.owl-pagination
+		display: block
+		position: absolute
+		bottom: -14em
+		width: 100%
+		margin: 0 auto
+		text-align: center
+		.owl-page
+			width: 100px
+			height: 10px
+			background: #fff
+			&:first-child
+				border-radius: 5px 0 0 5px
+			&:last-child
+				border-radius: 0 5px 5px 0
+			span
+				border-radius: 0
+				opacity: 0
+				width: 100px
+				height: 10px
+		.active
+			background: #6d4f83
+
+
 
 .owl__item-left
 	display: inline-block
@@ -756,7 +783,7 @@ section, footer
 	//	padding-bottom: 42.7%
 
 /* ===================== Start control ===================*/
-.owl-controls.clickable
+.owl-controls
 	position: absolute
 	top: 50%
 	@include translateY(-50%)
@@ -2190,7 +2217,7 @@ section, footer
 		width: 100%
 		height: 100%
 		display: block
-	.owl-controls.clickable
+	.owl-controls
 		width: 100%
 .video_description
 	font: 600 1.5rem/2em "Open Sans"
@@ -2362,7 +2389,7 @@ section, footer
 	.owl-item
 		max-height: 324px
 
-	.owl-controls.clickable
+	.owl-controls
 		width: 100%
 
 	.owl-buttons
@@ -2843,7 +2870,7 @@ textarea[placeholder]
 
 .workWith
 	margin-bottom: 6em
-	.owl-controls.clickable
+	.owl-controls
 		top: 48%
 
 

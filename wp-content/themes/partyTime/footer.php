@@ -55,7 +55,7 @@
 
 		<a href="/zakaz-prazdnika.html" class="button__modal button_zakaz">Онлайн - заказ</a>
 </div>
-
+<!--
 <div id="learn_more" class="modal_div modal_learn_more" >
 		<span class="modal_close modal-window__container__close learn_close"></span>
 		<div class="block_content">
@@ -97,13 +97,11 @@
 		</div>
 
 		<div class="block_modal_footer">
-			<!-- <div>
-			</div> -->
 			<p class="list_h1 footer_h1">Закажите данный пакет и получите профессиональную фотосъемку (5ч) в подарок!</p>
 		</div>
 
 </div>
-
+ -->
 <div id="overlay"></div>
 
 
