@@ -35,24 +35,24 @@ function register_meta_boxes( $meta_boxes ) {
 
     $meta_boxes[] = array(
 
-        'id'         => 'standard1',
-        'title'      => 'Gallery Primary',
+        'id' => 'standard1',
+        'title' => 'Gallery Primary',
         'post_types' => 'page',
-        'context'    => 'normal',
-        'priority'   => 'high',
-        'autosave'   => true,
+        'context' => 'normal',
+        'priority' => 'high',
+        'autosave' => true,
         'fields' => array(
 
             array(
-                'name'             => 'Images',
-                'id'               => 'imgadv1',
-                'type'             => 'image_advanced',
+                'name' => 'Images',
+                'id' => 'imgadv1',
+                'type' => 'image_advanced',
                 'max_file_uploads' => 20,
             ),
 
             array(
             	'name' => 'Text Fields',
-                'id'   => 'imgcap1',
+                'id' => 'imgcap1',
                 'type' => 'text',
                 'clone' => true,
                 'max_clone' => 20,
@@ -62,24 +62,24 @@ function register_meta_boxes( $meta_boxes ) {
 
     $meta_boxes[] = array(
 
-        'id'         => 'standard2',
-        'title'      => 'Gallery Secondary',
+        'id' => 'standard2',
+        'title' => 'Gallery Secondary',
         'post_types' => 'page',
-        'context'    => 'normal',
-        'priority'   => 'high',
-        'autosave'   => true,
+        'context' => 'normal',
+        'priority' => 'high',
+        'autosave' => true,
         'fields' => array(
 
             array(
-                'name'             => 'Images',
-                'id'               => 'imgadv2',
-                'type'             => 'image_advanced',
+                'name' => 'Images',
+                'id' => 'imgadv2',
+                'type' => 'image_advanced',
                 'max_file_uploads' => 20,
             ),
 
             array(
             	'name' => 'Text Fields',
-                'id'   => 'imgcap2',
+                'id' => 'imgcap2',
                 'type' => 'text',
                 'clone' => true,
                 'max_clone' => 20,
@@ -89,27 +89,47 @@ function register_meta_boxes( $meta_boxes ) {
 
     $meta_boxes[] = array(
 
-        'id'         => 'standard3',
-        'title'      => 'Gallery Tertiary',
+        'id' => 'standard3',
+        'title' => 'Gallery Tertiary',
         'post_types' => 'page',
-        'context'    => 'normal',
-        'priority'   => 'high',
-        'autosave'   => true,
+        'context' => 'normal',
+        'priority' => 'high',
+        'autosave' => true,
         'fields' => array(
 
             array(
-                'name'             => 'Images',
-                'id'               => 'imgadv3',
-                'type'             => 'image_advanced',
+                'name' => 'Images',
+                'id' => 'imgadv3',
+                'type' => 'image_advanced',
                 'max_file_uploads' => 50,
             ),
 
             array(
             	'name' => 'Text Fields',
-                'id'   => 'imgcap3',
+                'id' => 'imgcap3',
                 'type' => 'text',
                 'clone' => true,
                 'max_clone' => 20,
+            )
+        )
+    );
+
+    $meta_boxes[] = array(
+
+        'id' => 'standard4',
+        'title' => 'Modal',
+        'post_types' => 'page',
+        'context' => 'normal',
+        'priority' => 'high',
+        'autosave' => true,
+        'fields' => array(
+
+            array(
+                'name' => 'Text Fields',
+                'id' => 'wysiwyg',
+                'type' => 'wysiwyg',
+                'clone' => true,
+                'max_clone' => 4,
             )
         )
     );

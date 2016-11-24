@@ -4,7 +4,7 @@
 <head>
   <!-- <base href="h ttp://dev.partytime/" target="_blank"> -->
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=1300, initial-scale=1">
+	 <meta name="viewport" content="width=1300, initial-scale=1">
 	<title>PartyTime</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/component.css" />

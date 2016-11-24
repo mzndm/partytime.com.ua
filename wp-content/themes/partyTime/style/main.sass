@@ -394,6 +394,7 @@ section, footer
 .blockBanner__item
 	max-width: 370px
 	width: 100%
+	float: left
 	min-height: 1px
 	max-height: 598px
 	overflow: hidden
@@ -403,7 +404,7 @@ section, footer
 	@include flexbox()
 	flex-flow: row wrap
 	align-content: flex-start
-  @include transition(0.1s)
+	@include transition(0.1s)
 	position: relative
 	> div[class^="banner_"]
 		z-index: 1
