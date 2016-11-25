@@ -68,7 +68,7 @@
   <!-- start HELP  -->
   <section class="help">
     <div class="container">
-      <p class="section-header__p">Наша команда всегда прийдет Вам на помощь</p>
+      <p class="section-header__p">Наша команда всегда придет Вам на помощь</p>
     </div>
     <div class="help-img pull-left">
       <?php if ( is_active_sidebar( 'form-photo' ) ) : ?>
@@ -88,27 +88,27 @@
   </section>
 
   <!-- Over HELP  -->
-
+<!--
   <section class="workWith">
     <div class="container">
       <p class="section-header__p">С нами работали (Наши клиенты)</p>
       <div class="workWith__container">
         <div id="owl3" class="owl-carousel">
-          <?php
+          < ?php
               $images3 = rwmb_meta( 'imgadv3', array('multiple' => true) );
               $text3 = rwmb_meta( 'imgcap3', array('type' => 'text') );
               foreach ($images3 as $im3 => $image3):
           ?>
             <div>
-              <?php echo wp_get_attachment_image($im3, 'gallery-tertiary'); ?>
-              <p><?php echo array_shift($text3); ?></p>
+              < ?php echo wp_get_attachment_image($im3, 'gallery-tertiary'); ?>
+              <p>< ?php echo array_shift($text3); ?></p>
             </div>
-          <?php endforeach; ?>
+          < ?php endforeach; ?>
         </div>
       </div>
     </div>
 
-  </section>
+  </section> -->
 
 
     <!-- Start VideoRecomend  -->

@@ -119,8 +119,9 @@
 	<span class="modal_close modal-window__container__close learn_close"></span>
 	<?php echo array_shift($modaltext); ?>
 </div>
- 
+
 <div id="overlay"></div>
+
 
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jQuery.v3.1.0.min.js" type="text/javascript"></script>
 	<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js" type="text/javascript"></script>
@@ -134,6 +135,13 @@
 	<!-- Initialize Common -->
 
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/common.js"></script>
+
+	<!-- CHAT-->
+	<script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async"
+		src="https://web.redhelper.ru/service/main.js?c=spieler">
+	</script>
+	<!-- END CHAT-->
+
 
 	<?php wp_footer(); ?>
 

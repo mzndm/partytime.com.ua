@@ -193,7 +193,7 @@ section, footer
 
 
 
-.header__menu-bottom ul
+.header__menu-bottom .main-menu
 	@include flexbox()
 	flex-flow: row wrap
 	justify-content: space-between
@@ -288,6 +288,14 @@ section, footer
 		margin: 6px auto
 		background: #0075C0
 		display: block
+
+
+// .main-menu
+// 	.sub-menu
+// 		display: none
+// 	li
+// 		&hover
+// 			display: block
 
 
 /* Over header*/
@@ -791,7 +799,7 @@ section, footer
 	bottom: 0
 	left: 0
 	right: 0
-	height: 8vh
+	height: 70px
 	width: 85%
 	margin: 0 auto
 
@@ -1285,6 +1293,8 @@ section, footer
 		position: relative
 		padding: 0 6px 6px
 		margin: 26% 0 8px
+		font-weight: bold
+		font-size: 1rem
 		&::after
 			position: absolute
 			content: ''
@@ -2003,6 +2013,7 @@ section, footer
 .tabs-servis__item__consist__banner__icon-p
 	font: 1.9rem/1.3em "Open Sans"
 	text-align: center
+	width: 60%
 	top: 36%
 	color: #fff
 	letter-spacing: 2px
@@ -2227,9 +2238,10 @@ section, footer
 
 #video
 	height: 100%
-	max-height: 352px
+	max-height: 440px
+	margin-top: -30px
 	.owl__item-square
-		width: 60%
+		width: 70%
 		margin: 0 auto
 		max-height: 50%
 		overflow: hidden
@@ -2240,7 +2252,7 @@ section, footer
 			bottom: 0
 			left: 0
 			width: 100%
-			height: 300px
+			height: 348px
 			border: 0
 
 
@@ -2866,9 +2878,11 @@ textarea[placeholder]
 
 
 
-
-
-
+.otherServ
+	#owl2
+		height: 100%
+	.owl-controls
+		top: 45%
 .workWith
 	margin-bottom: 6em
 	.owl-controls
