@@ -146,7 +146,7 @@ section, footer
 .menu-social__icon:hover svg #twitter,
 .menu-social__icon:hover svg #vk,
 .menu-social__icon:hover svg #yT,
-.menu-social__icon:hover svg #phone
+.menu_phone:hover svg #phone
 	fill: #fff
 
 .header__menu-top ul:nth-child(3)
@@ -159,9 +159,17 @@ section, footer
 	text-decoration: none
 	display: block
 	padding: 3px 12px
+.menu_phone
+	.phone_link
+		@include flexbox()
+	a
+		color: #776e88
+	a:hover
+		text-decoration: none
+		color: #fff
 
 .menu-top__list a:hover
-	text-decoration: underline
+	//text-decoration: underline
 
 .menu-top_list-white-Border
 	border: 1px solid #fff
@@ -171,11 +179,16 @@ section, footer
 	transition: 0.5s
 
 
-.menu-top__list .menu-top_list-white-Border:hover
+.menu-top__list:hover
 	text-decoration: none
 	border: 1px solid #000
-	background: #ffffff
-	color: #000
+	background: #fff
+	-webkit-transition: 0.5s
+	-moz-transition: 0.5s
+	-o-transition: 0.5s
+	transition: 0.5s
+	a
+		color: #000
 
 .header__menu-bottom
 	@include flexbox()
