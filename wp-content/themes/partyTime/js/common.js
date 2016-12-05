@@ -178,32 +178,15 @@ function modal(){
 modal();
 
 //custom code - start
-$(document).ready(function() {
-	$(".owl-page").on("classChange", function() {
-		var i = $(this).index();
-		$(".menu__item--current").removeClass("menu__item--current");
-		$(".menu__item").eq(i).addClass("menu__item--current");
-	});
-//finish
 
-$("#owl2").data('owlCarousel').reinit({
- 	singleItem: false,
-    items: 4,
-    autoPlay: 2000
-});
-
-// $("#owl3").data('owlCarousel').reinit({
-//  	singleItem: false,
-//     items: 6,
-//     autoPlay: 2000
-// });
-
+$(".menu-top_list-white-Border a").addClass("open_modal");
 // modal vindows - start
     /* зaсунем срaзу все элементы в переменные, чтoбы скрипту не прихoдилoсь их кaждый рaз искaть при кликaх */
     var overlay = $('#overlay'); // пoдлoжкa, дoлжнa быть oднa нa стрaнице
     var open_modal = $('.open_modal'); // все ссылки, кoтoрые будут oткрывaть oкнa
     var close = $('.modal_close, #overlay'); // все, чтo зaкрывaет мoдaльнoе oкнo, т.е. крестик и oверлэй-пoдлoжкa
     var modal = $('.modal_div'); // все скрытые мoдaльные oкнa
+
 
      open_modal.click( function(event){ // лoвим клик пo ссылке с клaссoм open_modal
          event.preventDefault(); // вырубaем стaндaртнoе пoведение
@@ -260,5 +243,25 @@ for (var x = 0; x < urls1.length; x++) {
 		$('section.wrap').css('display', 'none');
 	}
 }
+
+$(document).ready(function() {
+	$(".owl-page").on("classChange", function() {
+		var i = $(this).index();
+		$(".menu__item--current").removeClass("menu__item--current");
+		$(".menu__item").eq(i).addClass("menu__item--current");
+	});
+//finish
+
+$("#owl2").data('owlCarousel').reinit({
+ 	singleItem: false,
+    items: 4,
+    autoPlay: 2000
+});
+
+$("#owl3").data('owlCarousel').reinit({
+ 	singleItem: false,
+    items: 6,
+    autoPlay: 2000
+});
 
 });
