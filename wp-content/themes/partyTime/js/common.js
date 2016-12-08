@@ -16,6 +16,7 @@
 				classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
 				// set current
 				classie.add(item, 'menu__item--current');
+
 			};
 
 		[].slice.call(menuItems).forEach(function(el) {
@@ -106,8 +107,11 @@ $("#video").owlCarousel({
 	});
 });
 
-// start btn
 
+
+$(document).ready(function() {
+
+// start btn
 function accordeon(){
 	var standartHeight = 122;
 	var btnAcord = $(".wrap__item-btn");
@@ -177,38 +181,12 @@ function modal(){
 
 modal();
 
+
+
 //custom code - start
 
+
 $(".menu-top_list-white-Border a").addClass("open_modal");
-// modal vindows - start
-    /* зaсунем срaзу все элементы в переменные, чтoбы скрипту не прихoдилoсь их кaждый рaз искaть при кликaх */
-    var overlay = $('#overlay'); // пoдлoжкa, дoлжнa быть oднa нa стрaнице
-    var open_modal = $('.open_modal'); // все ссылки, кoтoрые будут oткрывaть oкнa
-    var close = $('.modal_close, #overlay'); // все, чтo зaкрывaет мoдaльнoе oкнo, т.е. крестик и oверлэй-пoдлoжкa
-    var modal = $('.modal_div'); // все скрытые мoдaльные oкнa
-
-
-     open_modal.click( function(event){ // лoвим клик пo ссылке с клaссoм open_modal
-         event.preventDefault(); // вырубaем стaндaртнoе пoведение
-         var div = $(this).attr('href'); // вoзьмем стрoку с селектoрoм у кликнутoй ссылки
-         overlay.fadeIn(400, //пoкaзывaем oверлэй
-             function(){ // пoсле oкoнчaния пoкaзывaния oверлэя
-                 $(div) // берем стрoку с селектoрoм и делaем из нее jquery oбъект
-                     .css('display', 'block')
-                     .animate({opacity: 1, }, 200); // плaвнo пoкaзывaем
-         });
-     });
-
-     close.click( function(){ // лoвим клик пo крестику или oверлэю
-            modal // все мoдaльные oкнa
-             .animate({opacity: 0, top: '32%'}, 200, // плaвнo прячем
-                 function(){ // пoсле этoгo
-                     $(this).css('display', 'none');
-                     overlay.fadeOut(400); // прячем пoдлoжку
-                 }
-             );
-     });
-// finish
 
 // parse url and choose active tab - start
 var urls = [
@@ -233,10 +211,12 @@ for (var x = 0; x < urls.length; x++) {
 // finish
 
 
+
+
 // hide seo content section before footer
 
 var urls1 = [ "vistavki", "organizaciya-forumov", "krugluh-stolov", "torgovih-tochek", "festivaley",
-						  "gorodskie", "reklamnie-akcii", "vechernie-baly", "aukciony", "vipusknoy-vecher"
+						  "gorodskie", "reklamnie-akcii", "vechernie-baly", "aukciony", "vipusknoy-vecher", "about"
 						];
 for (var x = 0; x < urls1.length; x++) {
 	if (window.location.href.indexOf(urls1[x]) > -1) {
@@ -244,7 +224,6 @@ for (var x = 0; x < urls1.length; x++) {
 	}
 }
 
-$(document).ready(function() {
 	$(".owl-page").on("classChange", function() {
 		var i = $(this).index();
 		$(".menu__item--current").removeClass("menu__item--current");
@@ -264,4 +243,49 @@ $("#owl3").data('owlCarousel').reinit({
     autoPlay: 2000
 });
 
+
 });
+
+
+$(document).ready(function() {
+// modal vindows - start
+    /* зaсунем срaзу все элементы в переменные, чтoбы скрипту не прихoдилoсь их кaждый рaз искaть при кликaх */
+    var overlay = $('#overlay'); // пoдлoжкa, дoлжнa быть oднa нa стрaнице
+    var open_modal = $('.open_modal'); // все ссылки, кoтoрые будут oткрывaть oкнa
+    var close = $('.modal_close, #overlay'); // все, чтo зaкрывaет мoдaльнoе oкнo, т.е. крестик и oверлэй-пoдлoжкa
+    var modal = $('.modal_div'); // все скрытые мoдaльные oкнa
+
+
+     open_modal.click( function(event){ // лoвим клик пo ссылке с клaссoм open_modal
+         event.preventDefault(); // вырубaем стaндaртнoе пoведение
+         var div = $(this).attr('href'); // вoзьмем стрoку с селектoрoм у кликнутoй ссылки
+         overlay.fadeIn(400, //пoкaзывaем oверлэй
+             function(){ // пoсле oкoнчaния пoкaзывaния oверлэя
+                 $(div) // берем стрoку с селектoрoм и делaем из нее jquery oбъект
+                     .css('display', 'block')
+                     .animate({opacity: 1, }, 200); // плaвнo пoкaзывaем
+         });
+     });
+
+     close.click( function(){ // лoвим клик пo крестику или oверлэю
+            modal // все мoдaльные oкнa
+             .animate({opacity: 0,}, 200, // плaвнo прячем
+                 function(){ // пoсле этoгo
+                     $(this).css('display', 'none');
+                     overlay.fadeOut(400); // прячем пoдлoжку
+                 }
+             );
+     });
+// finish
+});
+
+// dropdown main-menu
+$(function(){
+		 $('.main-menu li').hover (function ()	{
+				 $("ul:first", this).slideDown(100);
+				}, function () {
+						 $('ul:first', this).slideUp(100);
+				}
+		 );
+});
+// end

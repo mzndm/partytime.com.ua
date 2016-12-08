@@ -129,7 +129,7 @@
 
 <section class="help">
 	<div class="container">
-		<p class="section-header__p">Наша команда всегда прийдет Вам на помощь</p>
+		<p class="section-header__p">Наша команда всегда придет Вам на помощь</p>
 	</div>
 	<div class="help-img pull-left">
 		<?php if ( is_active_sidebar( 'form-photo' ) ) : ?>

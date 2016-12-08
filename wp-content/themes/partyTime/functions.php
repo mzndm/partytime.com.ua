@@ -186,12 +186,16 @@ return apply_filters( 'the_title', $title, $id );
 // add menu
 add_theme_support( 'menus' );
 
-register_nav_menus(array(
-	'top'    => 'Верхнее меню',
-	'main'   => 'Основное меню' ,
-  'footer' => 'Меню в футере'
-));
-
+function register_my_menus() {
+  register_nav_menus(array(
+  	'top'    => 'Верхнее меню',
+  	'main'   => 'Основное меню',
+    'footer' => 'Меню в футере'
+  ));
+}
+if (function_exists('register_nav_menus')) {
+     add_action( 'init', 'register_my_menus' );
+}
 // content
 
 

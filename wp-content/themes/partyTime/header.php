@@ -173,9 +173,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</li>
         </ul>
 				<ul class="menu_phone">
-          <li class="menu-top__list">
+					<!-- <li class="menu-social__icon">
+            <a href="tel:+З8О44З5З172О">
+
+            </a>
+          </li> -->
+					<li class="menu-top__list">
               <a href="tel:+З8О44З5З172О" class="phone_link">
-								<svg width="20px" height="20px" fill="#776e88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 578.106 578.106" style="enable-background:new 0 0 578.106 578.106;" xml:space="preserve" >
+								<svg width="20px" height="20px" fill="#776e88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px" y="0px" viewBox="0 0 578.106 578.106" style="enable-background:new 0 0 578.106 578.106;" xml:space="preserve">
 									<g>
 										<g>
 											<path id="phone" d="M577.83,456.128c1.225,9.385-1.635,17.545-8.568,24.48l-81.396,80.781
@@ -191,7 +196,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												s24.684,30.293,43.452,48.653c18.36,18.77,34.68,33.354,48.96,43.76c14.277,10.4,26.215,18.053,35.803,22.949
 												c9.588,4.896,16.932,7.854,22.031,8.871l7.648,1.531c0.816,0,2.145-0.307,3.979-0.918c1.836-0.613,3.162-1.326,3.979-2.143
 												l34.883-35.496c7.348-6.527,15.912-9.791,25.705-9.791c6.938,0,12.443,1.223,16.523,3.672h0.611l118.115,69.768
-												C571.098,441.238,576.197,447.968,577.83,456.128z" fill="#776e88"/>
+												C571.098,441.238,576.197,447.968,577.83,456.128z" fill="#776e88"></path>
 										</g>
 									</g>
 								</svg>
@@ -241,7 +246,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               wp_nav_menu( array(
                      'menu_class'=>'main-menu',
                      'theme_location'=>'main',
-                     'after'=>'',
                      'menu_id' => 'main-menu',
                      'menu'            => '',
                      'container'       => false,
@@ -249,6 +253,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                      'container_id'    => '',
                      'echo'            => true,
                      'fallback_cb'     => 'wp_page_menu',
+										 'after'					 => '',
                      'before'          => '',
                      'link_before'     => '',
                      'link_after'      => '',
