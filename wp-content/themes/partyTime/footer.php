@@ -95,7 +95,11 @@
 	<!-- Initialize Common -->
 
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/common.js"></script>
-
+		<!-- CHAT-->
+	<script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async"
+		src="https://web.redhelper.ru/service/main.js?c=spieler">
+	</script>
+		<!-- END CHAT-->
 
 
 	<?php wp_footer(); ?>

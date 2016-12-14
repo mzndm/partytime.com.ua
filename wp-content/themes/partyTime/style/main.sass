@@ -678,6 +678,13 @@ section, footer
   color: #fff
   font: 600 1rem/2.7em "Open Sans"
   text-align: center
+.blockBanner__item__inside.blockBanner__item__pres__btn:hover
+	background: #fff
+	color: #000
+	-webkit-transition: 0.5s
+	-moz-transition: 0.5s
+	-o-transition: 0.5s
+	transition: 0.5s
 
 /*===================================================== Start gallery slider  ===========================*/
 
@@ -723,7 +730,7 @@ section, footer
 	p
 		position: absolute
 		right: 8em
-		bottom: 3em
+		bottom: 4em
 		color: #fff
 		font-size: 2em
 		font-weight: bold
@@ -1413,7 +1420,7 @@ section, footer
 .help-form
 	width: 100%
 	margin: 0 auto
-	min-height: 360px
+	min-height: 420px
 
 .help-form__tel
 	a
@@ -1486,6 +1493,15 @@ section, footer
 	font: 600 0.89rem/1em "Open Sans"
 	margin: 21px 0
 	cursor: pointer
+
+.wpcf7-not-valid-tip
+	margin-top: -2.1em
+	float: right
+	position: relative
+.wpcf7-validation-errors
+    width: 45%
+    margin-top: -0.7em!important
+
 
 // ==================================================== start
 
@@ -2492,12 +2508,13 @@ ul.text_content
 		right: -7%
 
 .modal_learn_more
-	width: 1100px
-	// height: 628px
+	max-width: 80%
+	min-width: 1030px
+	max-height: 80%
 	left: 0
 	right: 0
-	top: 10%
-	margin: 0 auto
+	top: 0
+	margin: 10% auto 0
 	background: #fff
 	.learn_close
 		top: -4%
